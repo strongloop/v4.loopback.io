@@ -1,0 +1,244 @@
+body {
+    overflow-x: hidden;
+    font-family: "IBM Plex Sans", sans-serif;
+    background-color: white;
+
+    --color-blue: #009cff;
+    --color-blue-d: #3f5dff;
+    --color-blue-xd: #001956;
+    --color-gray: #a3a4a3;
+    --color-gray-d: #626262;
+    --color-gray-xd: #393939;
+    --color-white: #ffffff;
+    --color-white-d: #fbfcfc;
+    --color-white-xd: #f8fafa;
+}
+a {
+    color: var(--color-gray);
+}
+
+a:hover {
+    color: var(--color-gray-xd);
+}
+
+.text-primary {
+    color: var(--color-gray-xd);
+}
+
+h1 {
+    font-size: 64px;
+    line-height: 72px;
+    font-weight: light;
+}
+h3 {
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: lighter;
+}
+h5 {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: normal;
+}
+h2,
+h3,
+h4,
+h6 {
+    font-weight: Light;
+}
+
+p.large {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: normal;
+    text-align: left;
+}
+p.regular {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: normal;
+    text-align: left;
+}
+p.centered-regular {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: normal;
+    text-align: center;
+
+}
+
+
+.col-lg-4.card-1 {
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px 30px;
+    border: 1px solid;
+    border-top-color: var(--color-blue);
+    border-top-width: 2px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.15);
+    text-align: left;
+    vertical-align: middle;
+    flex: 1;
+    color: var(--color-gray-xd);
+}
+
+
+.tag {
+    background-color: white;
+    text-align: center;
+    padding: 8px;
+    border-radius: 5px;
+    color: var(--color-blue-d);
+    border: none;
+}
+
+.btn-primary {
+    background-color: white;
+    text-align: center;
+    padding: 16px;
+    box-shadow: 0, 4, 6, 0, rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    color: var(--color-blue-d);
+}
+.btn-secondary {
+    background-color: white;
+    text-align: center;
+    padding: 16px;
+    border-radius: 5px;
+    border: none;
+    vertical-align: middle;
+    color: var(--color-blue-d);
+}
+
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:hover {
+    background-color: var(--color-white) !important;
+    color: var(--color-blue-xd);
+}
+
+.btn-secondary:active,
+.btn-secondary:focus,
+.btn-secondary:hover {
+    background-color: var(--color-blue-d) !important;
+    color: var(--color-white);
+}
+
+
+/* navbar */
+nav {
+    padding-top: 10px; 
+    background-color:white;
+}
+/* Header alert */
+.header-alert {
+    padding-top: 80px;
+    padding-bottom:2px;
+    background-color:var(--color-blue-d);
+    color: var(--color-white);
+    text-align: center;
+    vertical-align: middle;
+  }
+
+/* masthead */
+.masthead {
+    text-align: center;
+    color: var(--color-white);
+    background-image: linear-gradient(to bottom, #009cff, #3f5dff);
+    padding: 64px 0px 80px 0px;
+    z-index: 5;
+    position: relative;
+} 
+    
+.masthead .container {
+    position: absolute;
+    background-color: var(--color-blue);
+    background: url("../img/homepage/hero-illustration.svg");
+    opacity: 0.4;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    padding: 350px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.masthead .main-logo {
+    width: 210px;
+    height: 240px;
+    padding-top: 32px;
+    padding-bottom: 16px;
+}
+
+.masthead .tag {
+    margin-bottom: 48px;
+    line-height: 14px;
+    padding: 10px 15px;
+}
+#features {
+    background-color: var(--color-white-xd);
+}
+#how-can-we-help {
+    background-color: var(--color-white);
+}
+.nav-item {
+    margin-left: 30px;
+}
+
+/* Section */
+section {
+    padding: 80px 0 56px 0;
+}
+.container {
+    padding: 0px 0 112px 0;
+}
+.action {
+    background-image:linear-gradient(#009CFF, #3F5DFF);
+}
+
+.action .container {
+    padding: 30px;
+}
+
+/* Footer */
+footer {
+    padding: 25px 0;
+    text-align: center;
+    background-color: var(--color-gray-xd);
+}
+
+footer a {
+    color: white;
+}
+
+footer p.label {
+    color: var(--color-gray);
+    text-align: left;
+}
+footer p.regular {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: normal;
+    text-align: left;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: white;
+}
+
+footer a:active,
+footer a:focus,
+footer a:hover {
+    color: var(--color-gray);
+    text-decoration: none;
+}
