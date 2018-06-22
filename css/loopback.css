@@ -128,12 +128,14 @@ p.centered-regular {
   text-align: center;
   padding: 16px;
   border-radius: 5px;
-  border: none;
+  border-color: var(--color-blue-d);
+  border: solid;
   vertical-align: middle;
   color: var(--color-blue-d);
   font-size: 16px;
-  font-weight: bold;
   line-height: 16px;
+  position: relative;
+  top: 50%;
 }
 
 .btn-primary:active,
@@ -148,18 +150,23 @@ p.centered-regular {
 .btn-secondary:hover {
   background-color: var(--color-blue-d);
   color: var(--color-white);
+  border-color: var(--color-blue-d);
 }
 
 /* navbar */
 nav {
   padding-top: 10px;
   background-color: white;
+  border-bottom: solid 1px var(--color-gray);
 }
 .navbar-light .navbar-nav .nav-link:hover {
   color: var(--color-blue-d);
 }
 .navbar-light .navbar-nav .nav-link:active {
   color: var(--color-blue-xd);
+}
+.navbar-light .navbar-nav .nav-link.highlighted {
+  color: var(--color-gray-xd);
 }
 
 /* Header alert */
@@ -186,7 +193,7 @@ nav {
 .masthead .container-fluid {
   position: absolute;
   background-color: var(--color-blue);
-  background: url('../img/homepage/hero-illustration.svg');
+  background: linear-gradient(to top, transparent, #3f5dff), url('../img/homepage/hero-illustration.svg');
   opacity: 0.4;
   z-index: -1;
   background-repeat: no-repeat;
@@ -266,7 +273,7 @@ section {
   padding: 80px 0 56px 0;
 }
 .container {
-  padding: 0px 0 112px 0;
+  padding: 0px 0 50px 0;
 }
 
 /* Action */
@@ -289,12 +296,18 @@ section {
 .hairline {
   stroke-width: 1px;
   background-color: var(--color-gray);
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 /* Footer */
 footer {
   padding: 25px 0;
   text-align: center;
   background-color: var(--color-gray-xd);
+}
+.hairline-footer {
+  stroke-width: 1px;
+  background-color: var(--color-gray);
 }
 
 footer a {
@@ -319,4 +332,18 @@ footer a:focus,
 footer a:hover {
   color: var(--color-gray);
   text-decoration: none;
+}
+
+.code-snippet {
+  color: var(--color-gray-xd);
+  text-align: left;
+  background-color: var(--color-white-xd);
+  border-radius: 5px;
+  border-color: var(--color-gray-xd);
+  border: 1px solid;
+  padding: 22px 30px 0px 30px;
+  width: 100%;
+  position: relative;
+  top: 30%;
+  white-space: pre-wrap;
 }
