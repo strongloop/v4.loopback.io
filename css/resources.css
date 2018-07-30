@@ -1,0 +1,33 @@
+.res-masthead {
+    text-align: center;
+    color: var(--color-white);
+    background-image: linear-gradient(to bottom, #009cff, #3f5dff);
+    padding: 120px 0px 80px 0px;
+    z-index: 5;
+    position: relative;
+    overflow: hidden;
+}
+.res-masthead .container-fluid {
+    position: absolute;
+    background-color: var(--color-blue);
+    background: url('../img/resources/line-pattern-2x.png');
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    padding: 350px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.card2.img {
+    position:relative;
+    top:20%;
+}
