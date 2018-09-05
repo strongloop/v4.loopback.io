@@ -1,0 +1,25 @@
+{
+  "name": "v4.loopback.io",
+  "version": "1.0.0",
+  "description": "Scripts for the jekyll-based v4.loopback.io site",
+  "private": true,
+  "scripts": {
+    "build": "bundle exec jekyll build",
+    "start": "bundle exec jekyll serve --incremental",
+    "postinstall": "npm run swagger-ui",
+    "swagger-ui": "node ./api-explorer/upgrade-swagger-ui.js"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Strongloop/loopback.io.git"
+  },
+  "devDependencies": {
+    "fs-extra": "^7.0.0",
+    "swagger-ui-dist": "^3.18.2"
+  },
+  "license": "MIT",
+  "dependencies": {}
+}
