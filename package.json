@@ -5,5 +5,8 @@
   },
   "devDependencies": {
     "vuepress": "^0.14.2"
+  },
+  "dependencies": {
+    "resolve-url-loader": "^2.3.0"
   }
 }

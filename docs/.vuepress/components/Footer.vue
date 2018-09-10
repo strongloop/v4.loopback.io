@@ -52,7 +52,6 @@
                             href="https://twitter.com/intent/tweet?text=Creating APIs has never been easier using %23LoopBack 4 by %40StrongLoop. Check it out at v4.loopback.io.&url=v4.loopback.io">
                           Tweet</a>
                         <a href="https://twitter.com/intent/tweet?screen_name=StrongLoop&ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="true">Tweet to @StrongLoop</a>
-                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                     </p>
                 </div>
             </div>
