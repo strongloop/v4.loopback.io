@@ -49,6 +49,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="http://loopback.io/doc/en/lb4">Docs</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="oasgraph.html">GraphQL</a>
+                </li>
                 <li class="nav-item" style="padding-top: 10px">
                     <a class="github-button" href="https://github.com/strongloop/loopback-next" data-icon="octicon-star" data-show-count="true"
                         aria-label="Star strongloop/loopback-next on GitHub">Star</a>
@@ -88,7 +91,7 @@
         </div>
     </section>
     <hr class="hairline">
-    
+
     <section id="step2" class="even-section">
         <!-- Install LB4 CLI subsection -->
         <div class="container">
@@ -111,7 +114,7 @@
         </div>
     </section>
     <hr class="hairline">
-    <section id="step3" class="odd-section"> 
+    <section id="step3" class="odd-section">
         <!-- create new project subsection -->
         <div class="container">
             <div class="row text-center">
@@ -130,8 +133,8 @@
                 </div>
             </div>
         </div>
- 
-        
+
+
 
         <!-- answer the prompt subsection -->
         <div class="container">
@@ -154,7 +157,7 @@
         </div>
     </section>
     <hr class="hairline">
-    <section id="step4" class="even-section"> 
+    <section id="step4" class="even-section">
         <!-- Starting the project-->
         <div class="container">
             <div class="row text-center">
@@ -179,7 +182,7 @@
         </div>
     </section>
     <hr class="hairline">
-    <section id="step5" class="odd-section"> 
+    <section id="step5" class="odd-section">
         <!-- add controller subsection -->
         <div class="container">
             <div class="row text-center">
@@ -197,14 +200,14 @@
 <code-blue> $</code-blue> lb4 controller
 <code-blue>[?]</code-blue> Controller class name: hello
 <code-blue>[?]</code-blue> What kind of controller would you like to generate? Empty Controller
-    create src/controllers/hello.controller.ts 
+    create src/controllers/hello.controller.ts
     update src/controllers/index.ts
 Controller Hello was now created in src/controllers/
                     </pre>
                 </div>
             </div>
         </div>
-        
+
         <!-- Edit controller subsection -->
         <div class="container">
             <hr class="hairline">
@@ -219,8 +222,8 @@ Controller Hello was now created in src/controllers/
 <code-blue>export class </code-blue>HelloController {
   @get('/hello')
   hello(): string {
-    <code-blue>return</code-blue> 'Hello world!'; 
-  } 
+    <code-blue>return</code-blue> 'Hello world!';
+  }
 }
                     </pre>
                 </div>
@@ -228,7 +231,7 @@ Controller Hello was now created in src/controllers/
         </div>
     </section>
     <hr class="hairline">
-    <section id="step6" class="even-section"> 
+    <section id="step6" class="even-section">
         <!-- Test your application -->
         <div class="container">
             <div class="row text-center">
