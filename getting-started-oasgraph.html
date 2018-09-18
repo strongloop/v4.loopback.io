@@ -14,6 +14,8 @@
     <link href="dist/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" rel="stylesheet">
     <link href="css/loopback.css" rel="stylesheet">
+    <link href="css/getting-started.css" rel="stylesheet">
+    <link href="css/oasgraph.css" rel="stylesheet">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125843766-1"></script>
@@ -29,7 +31,7 @@
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.html">
             <img src="img/global/loopback-full-logo-blue.svg" width=150px>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -60,122 +62,110 @@
 
         </div>
     </nav>
-
-    <!--Header alert -->
-    <div class="header-alert">
-        <p class="centered-regular">LoopBack 4 is currently available as Developer Preview #3.</p>
-    </div>
     <!-- Header -->
-    <div class="masthead">
-        <div class="container-fluid"></div>
-        <h1>LoopBack 4: Build Amazing APIs</h1>
-        <h5>LoopBack 4 is the next step in the evolution of LoopBack.</h5>
-        <img class="main-logo" src="img/global/loopback-mark-frame-white.svg"></img>
-        <br>
-        <button class="tag text-uppercase">Developer Preview</button>
-        <br>
-        <a class="btn btn-primary" role="button" href="getting-started.html">Get Started with LoopBack 4</a>
+    <div class="oasgraph-masthead">
+        <h2>Ready to translate REST to GraphQL?</h2>
+        <br/>
+        <h5 style="font-weight: normal">Let's get you equipped.</h5>
     </div>
 
-    <!-- Feature section -->
-    <section id="features">
-        <!-- new core subsection -->
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-md-6">
-                    <h3 class="feature-heading">A Brand New Core</h3>
-                    <p class="p large">A brand new LoopBack core to deliver great extensibility and flexibility written in TypeScript/ES2017.</p>
-                </div>
-                <div class="col-md-6">
-                    <img src="img/homepage/core-illustration-2x.png" />
-                </div>
-            </div>
-        </div>
-        <!-- Open API subsection -->
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-md-6">
-                    <img src="img/homepage/openAPI-illustration-2x.png" />
-                </div>
-                <div class="col-md-6" style="align-content: right">
-                    <h3 class="feature-heading">OpenAPI Spec Driven REST API</h3>
-                    <p class="p large">Create powerful APIs easily with a new creation experience for defining REST API's and handling API requests/responses.
-                    </p>
-                </div>
-            </div>
-        </div>
 
-        <!-- Extensibility subsection-->
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-md-6">
-                    <h3 class="feature-heading">Unbelievably Extensible</h4>
-                        <p class="p large">A new, improved programming model with Dependency Injection and new concepts such as Components,
-                            Mixins, Repositories, etc. make this the most extensible version yet.
-                        </p>
-                </div>
-                <div class="col-md-6">
-                    <img src="img/homepage/extensibile-illustration-2x.png" />
-                </div>
+    <section class="odd-section">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-12">
+            <button class="steptag text-uppercase">Step 1</button>
+          </div>
+          <div class="col-md-6">
+            <h3 class="feature-heading">Have you installed Node.js?</h3>
+            <p class="p large step">Before you install OASGraph, make sure to download and install Node.js (version 8.9.x or higher), a JavaScript runtime.</p>
+          </div>
+          <div class="col-md-6">
+            <div class="col-md-6">
+              <a class="btn btn-secondary" style="padding-left:60px; padding-right:60px; top: 20%" role="button" href="https://nodejs.org/en/download/">Install Node.js</a>
             </div>
+          </div>
         </div>
-
-        <!-- OASGraph subsection -->
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-md-6">
-                    <img src="img/homepage/conveyorbelt-2x.png" />
-                </div>
-                <div class="col-md-6" style="align-content: right">
-                    <h3 class="feature-heading">GraphQL Support</h3>
-                    <p class="p large">Using OASGraph, create a GraphQL interface for any REST API. <a href="oasgraph.html">Learn more...</a>
-                    </p>
-                </div>
-            </div>
-        </div>
+      </div>
     </section>
 
-    <!-- How can we help -->
-    <section id="how-can-we-help">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h3 class="section-heading">How Can We Help?</h3>
-                    <p>We've curated resources to help you get started faster with LoopBack 4.</p>
-                    <p style="height:36px"></p>
-                </div>
-            </div>
-            <div class="row text-center" style="justify-content: center">
-                <a class="col-lg-4 card" href="http://loopback.io/doc/en/lb4/Getting-started.html">
-                    <h5 class="card-title">Documentation</h5>
-                    <p class="regular text-gray">Code with confidence by learning more about LoopBack 4 through our documentation.</p>
-                </a>
-                <a class="col-lg-4 card" href="https://strongloop.com/strongblog/tag_LoopBack.html">
-                    <h5 class="card-title">Stay in the Loop</h5>
-                    <p class="regular text-gray">Check out our LoopBack 4 blog posts that feature the latest news and updates.</p>
-                </a>
-                <a class="col-lg-4 card" href="https://github.com/strongloop/loopback-next">
-                    <h5 class="card-title">Contribute to the development</h5>
-                    <p class="regular text-gray">Shape the future of LoopBack 4 to be more meaningful for our API creation experience.</p>
-                </a>
-            </div>
+    <hr class="hairline">
+
+    <section id="step2" class="even-section">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-12">
+            <button class="steptag text-uppercase">Step 2</button>
+          </div>
+          <div class="col-md-6">
+            <h3 class="feature-heading">Install OASGraph</h3>
+            <p class="p large step">OASGraph can be used either as a library, or via its Command Line Interface (CLI). To install OASGraph, clone the repository and link the library (for the CLI commands to work) using the indicated steps.</p>
+          </div>
+          <div class="col-md-6">
+            <pre class="code-snippet">
+<code-blue>$</code-blue> npm clone git@github.com:strongloop/oasgraph.git
+<code-blue>$</code-blue> cd oasgraph
+<code-blue>$</code-blue> npm link
+            </pre>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- Action section -->
-    <div class="action">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8">
-                    <h3 style="color:white">Ready to build amazing things?
-                        <br> Try LoopBack 4 now.</h3>
-                </div>
-                <div class="col-md-4">
-                    <a class="btn btn-primary" role="button" href="http://loopback.io/doc/en/lb4/Getting-started.html">Get Started With LoopBack 4</a>
-                </div>
-            </div>
+    <hr class="hairline">
+
+    <section id="step3" class="odd-section">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-12">
+            <button class="steptag text-uppercase">Step 3</button>
+          </div>
+          <div class="col-md-12">
+            <h3 class="feature-heading">Save OAS</h3>
+            <p class="p large step">OASGraph relies on the OpenAPI Specification (OAS) of an existing API to create a GraphQL interface around that API.</p>
+          </div>
+          <div class="col-md-6" style="padding-top: 30px;">
+            <p class="p large step">If you use LoopBack, start your API server in the LoopBack project folder, and access the API's OAS at <a class="link" href="http://127.0.0.1:3000/openapi.json">http://127.0.0.1:3000/openapi.json</a>. Save the OAS to disk.</p>
+          </div>
+          <div class="col-md-6">
+            <pre class="code-snippet">
+<span class="text-secondary"># in the LoopBack project folder:</span>
+<code-blue>$</code-blue> npm start
+            </pre>
+          </div>
         </div>
-    </div>
+      </div>
+      <div class="container">
+        <hr class="hairline"/>
+        <div class="row text-center">
+          <div class="col-md-12">
+            <p class="p large step">If you want to generate a GraphQL interface for another API, make sure that API is running and save its OAS.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="hairline">
+
+    <section id="step4" class="even-section">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-12">
+            <button class="steptag text-uppercase">Step 4</button>
+          </div>
+          <div class="col-md-6">
+            <h3 class="feature-heading">Start GraphQL server</h3>
+            <p class="p large step">Once OASGraph is installed and the OAS is obtained, you can create and start the GraphQL server from the folder in which OASGraph is installed. The created GraphQL server is then accessible at <a class="link" href="http://127.0.0.1:3001/graphql">http://127.0.0.1:3001/graphql</a>.</p>
+          </div>
+          <div class="col-md-6">
+            <pre class="code-snippet">
+<span class="text-secondary"># in the OASGraph folder:</span>
+<code-blue>$</code-blue> oasgraph [path to saved OAS]
+            </pre>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- footer -->
     <footer>
@@ -239,15 +229,12 @@
         </div>
     </footer>
 
+    <!-- Scripts -->
     <script src="dist/jquery/jquery-3.3.1.slim.min.js"></script>
     <script src="dist/popper/1.14.0/umd/popper.min.js"></script>
     <!-- Bootstrap core JavaScript -->
     <script src="dist/bootstrap/js/bootstrap.min.js"></script>
-
     <!-- GitHub button -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
 
-
 </body>
-
-</html>
