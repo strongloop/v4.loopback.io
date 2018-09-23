@@ -1,0 +1,23 @@
+{
+  "name": "v4.loopback.io",
+  "version": "1.0.0",
+  "description": "LoopBack 4 Website",
+  "main": "index.html",
+  "devDependencies": {
+    "vuepress": "^0.14.4"
+  },
+  "scripts": {
+    "dev": "vuepress dev",
+    "build": "vuepress build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/strongloop/v4.loopback.io.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/strongloop/v4.loopback.io/issues"
+  },
+  "homepage": "https://github.com/strongloop/v4.loopback.io#readme"
+}
