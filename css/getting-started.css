@@ -56,6 +56,10 @@ code {
 
 code-blue {
     color: var(--color-blue-d);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 p.large.step {
