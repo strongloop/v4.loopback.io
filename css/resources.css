@@ -13,7 +13,7 @@
     background-color: var(--color-blue);
     background: url('../img/resources/line-pattern-2x.png');
 
-    opacity: 0.2;
+    opacity: 0.8;
     z-index: -1;
     background-repeat: no-repeat;
     background-attachment: scroll;
