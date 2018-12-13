@@ -8,14 +8,15 @@
     <!-- not working -->
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
-    <title>OASGraph</title>
+    <title>LoopBack 4</title>
 
     <!-- Bootstrap core CSS -->
     <link href="dist/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" rel="stylesheet">
     <link href="css/loopback.css" rel="stylesheet">
-    <link href="css/oasgraph.css" rel="stylesheet">
+    <link href="css/contribute.css" rel="stylesheet">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Site Analytics -->
     <script type="text/javascript">
         /* Define digital data object based on _appInfo object */
@@ -55,13 +56,13 @@
                     <a class="nav-link" href="resources.html">Resources</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contribute.html">Contribute</a>
+                    <a class="nav-link highlighted" href="contribute.html">Contribute</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="http://loopback.io/doc/en/lb4">Docs</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link highlighted" href="oasgraph.html">GraphQL</a>
+                    <a class="nav-link" href="oasgraph.html">GraphQL</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="https://ibm.biz/apitest">Test Your APIs</a>
@@ -72,128 +73,113 @@
                 </li>
             </ul>
         </div>
-    </nav>
+    </nav> 
 
-    <!-- Header -->
-    <div class="oasgraph-masthead">
-        <h1>OASGraph</h1>
-        <h5>Take any OpenAPI Specification (OAS) and create a GraphQL interface</h5>
+    <div class="r-masthead">
+        <div class="container-fluid"></div>
+        <div class="header-space"></div>
+        <h2>Help us make an impact.</h2>
+        <br>
+        <h5 style="font-weight: normal">LoopBack has an active and growing open-source community.</h5>
+        <div class="header-space"></div>
     </div>
+    <hr class="hairline">
 
-    <!-- How it works section -->
+    <!-- Contribute to LoopBack section -->
     <section class="odd-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <h3 class="text-center">How it works</h3>
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/KXUTmM6y-LM" allowfullscreen></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <hr class="oasgraph-hr">
-
-    <!-- Powerful functionality section -->
-    <section class="even-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <h3 class="text-center">Powerful functionality</h3>
-            <br/>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-sm-12 col-lg-4 text-center">
-            <img class="feature-image" src="img/oasgraph/nested-data-2x.png" alt="Icon depcting nested data"/>
-            <h4>Nested data</h4>
-            <p>
-              Schemas and links defined in the OAS are used to compose data definitions. Furthermore, hierarchical path structures can be used to nest data via the <code>addSubOperation</code> option (<a href="https://github.com/strongloop/oasgraph#options" target="_blank">learn more...</a>).
-            </p>
-          </div>
-          <div class="col-sm-12 col-lg-4 text-center">
-            <img class="feature-image" src="img/oasgraph/data-sanitization-2x.png" alt="Icon depicting data sanitation"/>
-            <h4>API Sanitation</h4>
-            <p>
-              GraphQL-incompatible identifiers of your API are sanitized. For example, API parameters or data definitions with unsupported characters (e.g., <code>-</code>, <code>.</code>, <code>,</code>, <code>:</code>, <code>;</code>...) are removed.
-            </p>
-          </div>
-          <div class="col-sm-12 col-lg-4 text-center">
-            <img class="feature-image" src="img/oasgraph/authentication-2x.png" alt="Icon depicting authentication"/>
-            <h4>Authentication</h4>
-            <p>
-              OASGraph provides <em>viewers</em> to support passing API keys or basic auth credentials. OAuth 2.0 integration can be handled by the hosting application (<a href="https://github.com/strongloop/oasgraph#authentication" target="_blank">learn more...</a>).
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <hr class="oasgraph-hr">
-
-    <!-- Get started section -->
-    <section class="odd-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-8">
-            <h3>Get started</h3>
-            <h5>Ready to translate from REST to GraphQL? Let's get you started!</h5>
-            <a class="btn btn-secondary" style="padding-left:60px; padding-right:60px; top: 20%" role="button" href="getting-started-oasgraph.html">View Guide</a>
-          </div>
-          <div class="col-sm-12 col-md-4">
-            <img class="get-started-image float-right" src="img/oasgraph-getting-started/rocketship-2x.png" alt="Icon showing a rocket and depicting getting started"/>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <hr class="oasgraph-hr">
-
-    <!-- How can we help -->
-    <section class="even-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h3 class="section-heading">How Can We Help?</h3>
-                    <p>We've curated resources to help you get started faster with OASGraph.</p>
-                    <p style="height:36px"></p>
+                    <h3 class="section-heading" style="padding-top: 48px;">Contribute to LoopBack</h3>
+                    <p>How do you wish to contribute?</p>
+                    <p style="height:24px"></p>
                 </div>
             </div>
-
+    
             <div class="row text-center" style="justify-content: center">
-              <div class="col-sm-12 col-md-6">
-                <a class="oasgraph-card" href="https://strongloop.com/strongblog/">
-                  <div class="row">
-                    <div class="col-sm-3">
-                      <img class="help-image" src="img/oasgraph/blog-posts-2x.png" alt="Icon depicting blog"/>
+                <div class="col-sm-12 col-md-6">
+                    <a class="card-2" href=" https://loopback.io/doc/en/contrib/Reporting-issues.html">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <img class="icon" src="img/contribute/issue-icon-1x.png" alt="Documentation icon"/>
+                        </div>
+                        <div class="col-sm-9">
+                            <h5 class="card-title">Report an issue</h5>
+                            <p class="regular text-gray">A relatively easy way to contribute is by reporting new issues. 
+                                See our general guidelines for reporting.</p>
+                        </div>
                     </div>
-                    <div class="col-sm-9">
-                      <h5 class="card-title">Blog posts</h5>
-                      <p class="regular text-gray">Visit our blog for all developer-related articles, tips, and advice.</p>
+                    </a>
+                </div>
+        
+                <div class="col-sm-12 col-md-6">
+                    <a class="card-2" href="https://loopback.io/doc/en/contrib/code-contrib.html" target="_blank">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <img class="icon" src="img/contribute/devgroup-icon-1x.png" alt="Issues icon"/>
+                        </div>
+                        <div class="col-sm-9">
+                            <h5 class="card-title">Contribute to code</h5>
+                            <p class="regular text-gray">If you're interested in contribuing to the code, be sure to read 
+                                the code contribution guidelines first.</p>
+                        </div>
                     </div>
-                  </div>
-                </a>
-              </div>
-
-              <div class="col-sm-12 col-md-6">
-                <a class="oasgraph-card" href="https://github.com/strongloop/oasgraph" target="_blank">
-                  <div class="row">
-                    <div class="col-sm-3">
-                      <img class="help-image" src="img/oasgraph/git-repository-2x.png" alt="Icon depicting Git repository"/>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="row text-center" style="justify-content: center">
+                <div class="col-sm-12 col-md-6">
+                    <a class="card-2" href="https://loopback.io/doc/en/contrib/doc-contrib.html" target="_blank">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <img class="icon" src="img/contribute/contribute-icon-1x.png" alt="Chat room icon"/>
+                        </div>
+                        <div class="col-sm-9">
+                            <h5 class="card-title">Contribute to documentation</h5>
+                            <p class="regular text-gray">We welcome input and help with documentation. 
+                                Check out the documentation sources.</p>
+                        </div>
                     </div>
-                    <div class="col-sm-9">
-                      <h5 class="card-title">Git repository</h5>
-                      <p class="regular text-gray">Learn from or contribute to our repository, complete with regularly updated documentation.</p>
+                    </a>
+                </div>
+        
+                <div class="col-sm-12 col-md-6">
+                    <a class="card-2" href="https://groups.google.com/forum/#!forum/loopbackjs" target="_blank">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <img class="icon" src="img/contribute/devchat-icon-1x.png" alt="Contribute icon"/>
+                        </div>
+                        <div class="col-sm-9">
+                            <h5 class="card-title">Participate in the community</h5>
+                            <p class="regular text-gray">The LoopBack community carries on lively discussions in several places. 
+                                Feel free to learn and participate.</p>
+                        </div>
                     </div>
-                  </div>
-                </a>
-              </div>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
+    <hr class="hairline">
+
+    <!-- Governance section -->
+    <section class="even-section">
+        <div class="container text-center">
+            <h3 class="section-heading" style="padding-top: 48px;">Governance</h3>
+            <p class="regular text-center">The LoopBack project governance model follows the sprint and tradition of open source.</p>
+            <p class="large" style="padding-left:190px;padding-right:190px;padding-top:32px;padding-bottom:24px;">
+                LoopBack is an open, inclusive, and tolerant community of people working together to build 
+                a world-class Node framework and tools. We value diversity of individuals and opinions, and seek to operate on
+                consensus whenever possible. We strive to maintain a welcoming, inclusive, and harassment-free environment, 
+                regardless of the form of communication. When consensus is not achievable, we defer to the owners of each 
+                individual module; the powers of the individual owner are kept in check by the ability of the community to 
+                fork and replace dependencies on the individual module and maintainer.</p>
+                <a class="btn btn-primary" role="button" style="padding-left:60px; padding-right:60px" 
+                href="https://loopback.io/doc/en/contrib/Governance.html">See more details</a>
+        </div>
+    </section>
+    <hr class="hairline">
 
     <!-- footer -->
     <footer>
@@ -248,7 +234,7 @@
                     <p style="float:right">
                         <a class="twitter-share-button"
                             href="https://twitter.com/intent/tweet?text=Creating APIs has never been easier using %23LoopBack 4 by %40StrongLoop. Check it out at v4.loopback.io.&url=v4.loopback.io">
-                          Tweet</a>
+                            Tweet</a>
                         <a href="https://twitter.com/intent/tweet?screen_name=StrongLoop&ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="true">Tweet to @StrongLoop</a>
                         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                     </p>
@@ -264,7 +250,6 @@
 
     <!-- GitHub button -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
-
 
 </body>
 
