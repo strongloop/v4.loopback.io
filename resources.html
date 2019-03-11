@@ -216,39 +216,23 @@
 
             <!-- Getting the six most recent blog posts from website -->
             <script>
-                var content; 
                 jQuery.ajax({ 
                     url: 'https://strongloop.com/blog-archives/', 
-                    success: function(data)  { 
-                        content = data;
-                        var body = jQuery(content);
-                        var list = body.find('li').toArray();
-                        var links = body.find('a').toArray();
+                    success: function(data) { 
+                        const body = jQuery(data);
+                        const list = body.find('li').toArray();
+                        const links = body.find('a').toArray();
 
-                        document.getElementById("post1").innerHTML = list[10].innerText.slice(0, list[10].innerText.lastIndexOf(" -"));
-                        document.getElementById("link1").href = links[11];
-                        document.getElementById("date1").innerHTML = list[10].innerText.slice(list[10].innerText.lastIndexOf("-") + 2);
+                        for(var i = 1; i < 7; i++) {
+                            var post = 'post' + i.toString();
+                            var link = 'link' + i.toString();
+                            var date = 'date' + i.toString();
 
-                        document.getElementById("post2").innerHTML = list[11].innerText.slice(0, list[11].innerText.lastIndexOf(" -"));
-                        document.getElementById("link2").href = links[12];
-                        document.getElementById("date2").innerHTML = list[11].innerText.slice(list[11].innerText.lastIndexOf("-") + 2);
-
-                        document.getElementById("post3").innerHTML = list[12].innerText.slice(0, list[12].innerText.lastIndexOf(" -"));
-                        document.getElementById("link3").href = links[13];
-                        document.getElementById("date3").innerHTML = list[12].innerText.slice(list[12].innerText.lastIndexOf("-") + 2);
-
-                        document.getElementById("post4").innerHTML = list[13].innerText.slice(0, list[13].innerText.lastIndexOf(" -"));
-                        document.getElementById("link4").href = links[14];
-                        document.getElementById("date4").innerHTML = list[13].innerText.slice(list[13].innerText.lastIndexOf("-") + 2);
-
-                        document.getElementById("post5").innerHTML = list[14].innerText.slice(0, list[14].innerText.lastIndexOf(" -"));
-                        document.getElementById("link5").href = links[15];
-                        document.getElementById("date5").innerHTML = list[14].innerText.slice(list[14].innerText.lastIndexOf("-") + 2);
-
-                        document.getElementById("post6").innerHTML = list[15].innerText.slice(0, list[15].innerText.lastIndexOf(" -"));
-                        document.getElementById("link6").href = links[16];
-                        document.getElementById("date6").innerHTML = list[15].innerText.slice(list[15].innerText.lastIndexOf("-") + 2);
-                    } 
+                            document.getElementById(post).innerHTML = list[i + 8].innerText.slice(0, list[i + 8].innerText.lastIndexOf(" -"));
+                            document.getElementById(link).href = links[i + 9];
+                            document.getElementById(date).innerHTML = list[i + 8].innerText.slice(list[i + 8].innerText.lastIndexOf("-") + 2);
+                        }
+                    }
                 });
             </script>
 
@@ -256,21 +240,21 @@
                 <div class="col-md-4">
                     <a id="link1" class="card-3">
                         <h5 id="post1" class="card-title"></h5>
-                        <p id="date1" class="regular text-gray" style="position:absolute; bottom:36px;"></p>
+                        <p id="date1" class="regular text-gray date"></p>
                     </a>
                 </div>
 
                 <div class="col-md-4">
                     <a id="link2" class="card-3">
                         <h5 id="post2" class="card-title"></h5>
-                        <p id="date2" class="regular text-gray" style="position:absolute; bottom:36px;"></p>
+                        <p id="date2" class="regular text-gray date"></p>
                     </a>
                 </div>
 
                 <div class="col-md-4">
                     <a id="link3" class="card-3">
                         <h5 id="post3" class="card-title"></h5>
-                        <p id="date3" class="regular text-gray" style="position:absolute; bottom:36px;"></p>
+                        <p id="date3" class="regular text-gray date"></p>
                     </a>
                 </div>
             </div>
@@ -278,21 +262,21 @@
                 <div class="col-md-4">
                     <a id="link4" class="card-3">
                         <h5 id="post4" class="card-title"></h5>
-                        <p id="date4" class="regular text-gray" style="position:absolute; bottom:36px;"></p>
+                        <p id="date4" class="regular text-gray date"></p>
                     </a>
                 </div>
 
                 <div class="col-md-4">
                     <a id="link5" class="card-3">
                         <h5 id="post5" class="card-title"></h5>
-                        <p id="date5" class="regular text-gray" style="position:absolute; bottom:36px;"></p>
+                        <p id="date5" class="regular text-gray date"></p>
                     </a>
                 </div>
 
                 <div class="col-md-4">
                     <a id="link6" class="card-3">
                         <h5 id="post6" class="card-title"></h5>
-                        <p id="date6" class="regular text-gray" style="position:absolute; bottom:36px;"></p>
+                        <p id="date6" class="regular text-gray date"></p>
                     </a>
                 </div>
             </div>
@@ -311,9 +295,9 @@
         </div>
     </section>
     <hr class="hairline">
-    
+     
      <!-- Loopback integration section -->
-    <section class="even-section">
+    <section class="odd-section">
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
@@ -377,7 +361,7 @@
             <hr class="hairline-footer">
             <div class="row text-center">
                 <div class="col-md-6">
-                    <p class="regular"> @ Copyright 2018 StrongLoop, an IBM company</p>
+                    <p class="regular"> @ Copyright 2019 StrongLoop, an IBM company</p>
                 </div>
                 <div class="col-md-6">
                     <p style="float:right">
